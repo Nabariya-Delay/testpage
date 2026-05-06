@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+html{
+
+/* フォント関連 */
+/* font-family: "Bodoni Moda", serif; */
+/* font-family: "Shippori Mincho", serif; */
+
+font-family: "Zen Old Mincho", serif;
+
+/* body */
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.min{font-family: "Shippori Mincho", serif;}
+
+/* title */
+
+.title{font-family: "Bodoni Moda", serif;}
+
+.title2{
+    font-family: "Zen Old Mincho", serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.title3{
+    font-family: "Zen Old Mincho", serif;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.title4{
+    font-family: "Zen Old Mincho", serif;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom:  50px;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.susk{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0) 0% 20%, rgb(0, 0, 0) 20% 70%, rgba(0, 0, 0, 0) 70% 100%)
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header{
+    padding: 27px 0;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+.ind li{
+    margin-left: 40px;
+}
+
+.ind{
+    padding-right: 10px
+}
+
+.ind li a{
+transition: 0.5;
+}
+
+.ind li a:hover{
+color: rgb(161, 217, 255);
+transition: 0.5;
+}
+
+/* メイン */
+#hero{
+    background-image: url(../images/main.png);
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+
+#hero::before{
+    content: '';
+    width:100%;
+    height:100%;
+    background-color: rgb(255, 59, 59);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.hero_inner{
+z-index: 2;
+color: #ffffff;
+width: 100%;
+padding-left: 30px
+}
+
+.hero_inner p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+
+.hero_inner p{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+
+#hero{
+    background-image: url(../images/main.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+
+#hero::before{
+    content: '';
+    width:100%;
+    height:100%;
+    background-color: rgb(255, 59, 59);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: 1;
+}
+}
+
+/* その他 */
+.text {
+font-size: 20px;
+line-height: 90px;
+padding-left: 30px;
+}
+
+.text2 {
+padding-bottom: 20px;
+padding-left: 60px;
+}
+
+.box-simple1 {
+  border: 3px solid #000000;
+  border-radius: 70px;  
+  width: 470px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.box-simple2 {
+  border: 3px solid #000000;
+  border-radius: 30px;  
+  padding: 18px;
+  width: 140px;
+}
+
+.column {
+    width:45%;
+}
+
+.img_1{
+background-image: url(../images/Profile.png);
+background-position: center;
+background-size: cover;
+height: 600px;
+border-radius: 100px;
+}
+
+.bottom{
+margin-bottom: 120px;  
+}
+
+.mail {
+    font-family: "Bodoni Moda", serif;
+    font-size: 75px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  /* gap: 10px; 隙間*/
+  white-space: nowrap; /* 画像が折り返されないようにする */
+  margin-bottom: 20px;
+  border-radius: 25px;
+  scrollbar-width: none;
+}
+
+.slide-item img {
+  width: auto;
+  height: 600px;
+  display: block;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.beta {
+background-color:rgb(129, 129, 129);
+height: 80px;
+}
+
+/* レスポンシブ用2 */
+@media only screen and (max-width: 600px) {
+.flex{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text {
+font-size: 15px;
+line-height: 50px;
+padding-left: 20px;
+margin-bottom: 20px;
+}
+
+.text2 {
+font-size: 15px;
+line-height: 20px;
+padding-left: 5px;
+}
+
+.text3 {
+padding-left: 30px;
+}
+
+.mail {
+    font-family: "Bodoni Moda", serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.box-simple1 {
+  border: 2px solid #000000;
+  border-radius: 30px;  
+  padding: 18px;
+}
+
+.box-simple2 {
+  border: 3px solid #000000;
+  border-radius: 30px;  
+  width: 130px;
+  height: 60%;
+}
+
+.title4{
+    font-family: "Zen Old Mincho", serif;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom:  30px;
+}
+
+.slider-container {
+  display: flex; /* 子要素を横並びにする */
+  overflow-x: scroll; /* 横方向のスクロールを有効にする */
+  margin: 10px;
+  border-radius: 25px;
+  scrollbar-width: none;
+}
+
+.slide-item img {
+  width: auto;
+  height: 300px;
+  display: block;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.res{
+    font-size:15px;
+}
+
+.ind li{
+    margin-left: 5px;
+}
+
+#hero{
+    background-image: url(../images/main.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+
+.hero_inner{
+z-index: 2;
+color: #ffffff;
+width: 100%;
+padding-left: 10px
+}
+
+.hero_inner p{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+}
+}
