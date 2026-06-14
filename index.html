@@ -11,53 +11,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Shippori+Mincho&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
 <body>
     <header>
-        <div class="container flex title">
+        <div class="container flex">
             <a href="" class="logo">Kakurega<br>Gallery</a>
-                <nav>
-                    <ul class="ind flex">
-                        <li><a class="susk title2 res" href="#profile">Profile</a></li>
-                        <li><a class="susk title2 res" href="#collection">Collection</a></li>
-                        <li><a class="susk title2 res" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul class="ind flex">
+                    <li><a class="susk title2" href="#profile">Profile</a></li>
+                    <li><a class="susk title2" href="#collection">Collection</a></li>
+                    <li><a class="susk title2" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <section id="hero" class="container">
             <div class="hero_inner">
-                <p class="min">秘密記憶域</p>
+                <p>秘密記憶域</p>
             </div>
         </section>
+
         <!-- Profile -->
         <section id="profile" class="container">
-            <div class="bottom">
+            <div>
                 <p class="title3">
                     <a class="susk">Profile</a>
                 </p>
                 <div class="flex">
                     <div class="column">
-                        <div class="title4 box-simple1">隠家 / Kakurega</div>
-                        <p class="text">
-                        xyyy年生まれ。<br>南川道出身。                    
-                        </p>
-                        <p class="text">
-                        ワグホーツ魔法工学院中学小学院を卒業後、<br>
-                        株式会社AAADDD代表取締役に就任<br>
-                        </p>
-                        <p class="text">現在はフリーランスとして活動中
-                        </p>
+                        <div>
+                            <div class="box-simple1">隠家 / Kakurega</div>
+                            <p class="text">
+                            xyyy年生まれ。<br>南川道出身。                    
+                            ワグホーツ魔法工学院中学小学院を卒業後、<br>
+                            株式会社AAADDD代表取締役に就任<br>
+                            現在はフリーランスとして活動中
+                            </p>
+                        </div>
                     </div>
                     <div class="column img_1"></div>
                 </div>
             </div>
         </section>
+
         <!-- Collection -->
         <section id="collection" class="container">
                 <div class="">
-                <p class="title3">
-                    <a class="susk">Collection</a>
-                </p>
-                <div class="line"></div>
+                    <p class="title3">
+                        <a class="susk">Collection</a>
+                    </p>
+                    <div class="line"></div>
                 </div>
             <section class="content-section">
                     <div class="slider-container">
@@ -76,8 +77,8 @@
             <p class="title3">
                 <a class="susk">Contact</a>
             </p>
-            <div class="left">
-                <div class="text2"><p class="box-simple2">Mail Address</p></div>
+            <div>
+                <div class="text2"><p>Mail Address</p></div>
                 <div><p class="mail">>>>>>>>0000000@Amail.com</p></div>
             </div>
         </section>
@@ -86,18 +87,18 @@
 </main>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-ScrollReveal({ reset: false, distance: "30px", duration:2000 });
-ScrollReveal().reveal('.logo', { delay: 100, origin: "left" });
-ScrollReveal().reveal('.ind', { delay: 100, origin: "top" });
-ScrollReveal().reveal('.hero_inner', { delay: 100, origin: "left" });
-ScrollReveal().reveal('#hero', { delay: 100, origin: "bottom" });
-ScrollReveal().reveal('.title3', { delay: 100, origin: "left" });
-ScrollReveal().reveal('.title4, box-simple1', { delay: 100, origin: "bottom" });
-ScrollReveal().reveal('.content-section', { delay: 100, origin: "left" });
-ScrollReveal().reveal('.text', { delay: 100, origin: "left" });
-ScrollReveal().reveal('.img_1', { delay: 100, origin: "right" });
-ScrollReveal().reveal('.text2, box-simple2', { delay: 100, origin: "bottom" });
-ScrollReveal().reveal('.mail', { delay: 100, origin: "right" });
+    ScrollReveal({ reset: false, distance: "30px", duration:2000 });
+    ScrollReveal().reveal('.logo', { delay: 100, origin: "left" });
+    ScrollReveal().reveal('.ind', { delay: 100, origin: "top" });
+    ScrollReveal().reveal('.hero_inner', { delay: 100, origin: "left" });
+    ScrollReveal().reveal('#hero', { delay: 100, origin: "bottom" });
+    ScrollReveal().reveal('.title3', { delay: 100, origin: "left" });
+    ScrollReveal().reveal('.title4, box-simple1', { delay: 100, origin: "bottom" });
+    ScrollReveal().reveal('.content-section', { delay: 100, origin: "left" });
+    ScrollReveal().reveal('.text', { delay: 100, origin: "left" });
+    ScrollReveal().reveal('.img_1', { delay: 100, origin: "right" });
+    ScrollReveal().reveal('.text2, box-simple2', { delay: 100, origin: "bottom" });
+    ScrollReveal().reveal('.mail', { delay: 100, origin: "right" });
 </script>
 </body>   
 </html>
