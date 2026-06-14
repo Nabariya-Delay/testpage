@@ -20,85 +20,98 @@
                     <li><a class="susk title2" href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="res">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <main>
-        <section id="hero" class="container">
-            <div class="hero_inner">
-                <p>秘密記憶域</p>
-            </div>
-        </section>
+    <section id="hero" class="container">
+        <div class="hero_inner">
+            <p>TEST</p>
+        </div>
+    </section>
 
-        <!-- Profile -->
-        <section id="profile" class="container">
-            <div>
-                <p class="title3">
-                    <a class="susk">Profile</a>
-                </p>
-                <div class="flex">
-                    <div class="column">
-                        <div>
-                            <div class="box-simple1">隠家 / Kakurega</div>
-                            <p class="text">
-                            xyyy年生まれ。<br>南川道出身。                    
-                            ワグホーツ魔法工学院中学小学院を卒業後、<br>
-                            株式会社AAADDD代表取締役に就任<br>
-                            現在はフリーランスとして活動中
-                            </p>
-                        </div>
-                    </div>
-                    <div class="column img_1"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Collection -->
-        <section id="collection" class="container">
-                <div class="">
-                    <p class="title3">
-                        <a class="susk">Collection</a>
-                    </p>
-                    <div class="line"></div>
-                </div>
-            <section class="content-section">
-                    <div class="slider-container">
-                        <div class="slide-item">
-                        <img src="./images/dog.png" alt="作品1"></div>
-                        <div class="slide-item">
-                        <img src="./images/home.png" alt="作品2"></div>
-                        <div class="slide-item">
-                        <img src="./images/junk.png" alt="作品3"></div>
-                    </div>         
-            </section>
-                <div class="bottom"></div>
-        </section>
-        <!-- contact -->
-        <section id="contact" class="container">
+    <!-- Profile -->
+    <section id="profile" class="container">
+        <div>
             <p class="title3">
-                <a class="susk">Contact</a>
+                <a class="susk">Profile</a>
             </p>
-            <div>
-                <div class="text2"><p>Mail Address</p></div>
-                <div><p class="mail">>>>>>>>0000000@Amail.com</p></div>
+            <div class="flex">
+                <div class="column">
+                    <div class="box-simple1">隠家 / Kakurega</div>
+                    <p class="text">
+                        xyyy年生まれ。<br>南川道出身。                    
+                        ワグホーツ魔法工学院中学小学院を卒業後、<br>
+                        株式会社AAADDD代表取締役に就任<br>
+                        現在はフリーランスとして活動中
+                    </p>
+                </div>
+                <div class="column img_1"></div>
             </div>
+        </div>
+    </section>
+
+    <!-- Collection -->
+    <section id="collection" class="container">
+                <p class="title3">
+                    <a class="susk">Collection</a>
+                </p>
+        <section class="content-section">
+                <div class="slider-container">
+                    <div class="slide-item">
+                    <img src="./images/dog.png" alt="作品1"></div>
+                    <div class="slide-item">
+                    <img src="./images/junk.png" alt="作品3"></div>
+                    <div class="slide-item">
+                    <img src="./images/home.png" alt="作品2"></div>
+                </div>         
         </section>
-        <!-- bottom -->
-　　　　　<footer class="beta"></footer>
-</main>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-    ScrollReveal({ reset: false, distance: "30px", duration:2000 });
-    ScrollReveal().reveal('.logo', { delay: 100, origin: "left" });
-    ScrollReveal().reveal('.ind', { delay: 100, origin: "top" });
-    ScrollReveal().reveal('.hero_inner', { delay: 100, origin: "left" });
-    ScrollReveal().reveal('#hero', { delay: 100, origin: "bottom" });
-    ScrollReveal().reveal('.title3', { delay: 100, origin: "left" });
-    ScrollReveal().reveal('.title4, box-simple1', { delay: 100, origin: "bottom" });
-    ScrollReveal().reveal('.content-section', { delay: 100, origin: "left" });
-    ScrollReveal().reveal('.text', { delay: 100, origin: "left" });
-    ScrollReveal().reveal('.img_1', { delay: 100, origin: "right" });
-    ScrollReveal().reveal('.text2, box-simple2', { delay: 100, origin: "bottom" });
-    ScrollReveal().reveal('.mail', { delay: 100, origin: "right" });
-</script>
+            <div class="bottom"></div>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="container">
+        <p class="title3">
+            <a class="susk">Contact</a>
+        </p>
+        <div>
+            <div class="text2"><p>Mail Address</p></div>
+            <div><p class="mail">>>>>0000000@Amail.com</p></div>
+        </div>
+    </section>
+    <!-- bottom -->
+    </main>
+    <footer class="beta"></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: false, distance: "30px", duration:2000 });
+        ScrollReveal().reveal('.logo', { delay: 100, origin: "left" });
+        ScrollReveal().reveal('.res', { delay: 100, origin: "right" });
+        ScrollReveal().reveal('#hero', { delay: 100, origin: "bottom" });
+        ScrollReveal().reveal('#profile', { delay: 100, origin: "bottom" });
+        ScrollReveal().reveal('#collection', { delay: 100, origin: "bottom" });
+        ScrollReveal().reveal('#contact', { delay: 100, origin: "bottom" });
+        // ScrollReveal().reveal('ul', { delay: 100, origin: "top" });
+    </script>
+    <script>
+        const resBtn = document.querySelector('.res');
+        const nav = document.querySelector('nav');
+        const navLinks = document.querySelectorAll('nav a');
+
+        resBtn.addEventListener('click', () => {
+            resBtn.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            resBtn.classList.remove('active');
+            nav.classList.remove('active');
+            });
+        });
+    </script>
 </body>   
 </html>
