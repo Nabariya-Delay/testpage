@@ -16,7 +16,7 @@ body{
 
 .title3{
     font-family: "Zen Old Mincho", serif;
-    font-size: 40px;
+    font-size: 4rem;
     width: 100%;
     margin-bottom: 50px;
     color: #ffffff;
@@ -119,9 +119,9 @@ header {
 }
 
 .text2 {
-    border: 2px solid #000000;
+    border: 2px dotted #000000;
     border-radius: 30px;  
-    width: 150px;
+    width: 170px;
     height: 40px;
     display: grid;
     place-items: center;
@@ -213,7 +213,7 @@ footer {
 
 #contact > div{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -221,13 +221,15 @@ footer {
 @media only screen and (max-width: 600px) {
 
 .text2 {
-    border: 2px solid #000000;
+    border: 2px dotted #000000;
     width: 160px;
-    height: 30px;
+    height: 40px;
     display: grid;
     place-items: center;
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 0;
 }
 
 .title4{
