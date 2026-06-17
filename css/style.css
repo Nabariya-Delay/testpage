@@ -164,6 +164,12 @@ header {
     white-space: nowrap; 
     margin-bottom: 20px;
     scrollbar-width: thin;
+    scroll-snap-type: x mandatory;
+}
+
+
+.slide-item img {
+    scroll-snap-align: start;
 }
 
 .slide-item img {
